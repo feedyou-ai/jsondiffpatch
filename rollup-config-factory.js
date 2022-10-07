@@ -242,7 +242,7 @@ function copyFromFolderToDist(folder) {
   };
 }
 
-function createEmptyModuleDist() {
+export function createEmptyModuleDist() {
   return function() {
     let executed = false;
     return {

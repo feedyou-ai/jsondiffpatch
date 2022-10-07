@@ -1,3 +1,19 @@
+## This is a fork of [Benjamine's jsondiffpatch](https://github.com/benjamine/jsondiffpatch)
+
+The reason for this fork is to fix a bug in side this package's dependency: json-diff-patch. A fork is required because of how this package is distributed (precompiled before published to npm).
+
+Our fixed fork of diff-patch-match to use as a dependency is here: https://github.com/feedyou-ai/diff-match-patch
+
+Both packages (diff-match-patch and jsondiffpatch) are dead, so this shouldn't be an issue.
+
+This package is fucked! The prepublish script is broken (it's already broken in Benjamin's package). I didn't manage to get this package to properly build when included as a npm dependency. This is why `dist/` is included in GH repo. **This package must be manually re-built and dist commited** with every new verion of this repo, or diff-match-patch. Sucks, but true.
+
+How to update this package:
+1. Make appropriate changes in code
+2. Run `npm run prepublish`. If 'dist' is not present when running this command, you will need to **run it twice** - first run will fail, second one will pass 🤷‍♂️
+3. Commit all changes, including `dist/`
+
+## Original jsondiffpatch README:
 jsondiffpatch
 =============
 
