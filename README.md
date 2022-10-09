@@ -11,7 +11,9 @@ This package is fucked! The prepublish script is broken (it's already broken in 
 How to update this package:
 1. Make appropriate changes in code
 2. Run `npm run prepublish`. If 'dist' is not present when running this command, you will need to **run it twice** - first run will fail, second one will pass 🤷‍♂️
-3. Commit all changes, including `dist/`
+3. Bump the package version
+4. Commit all changes, including `dist/`
+5. You will likely need to to run `yarn upgrade jsondiffpatch` in your main package
 
 ## Original jsondiffpatch README:
 jsondiffpatch
