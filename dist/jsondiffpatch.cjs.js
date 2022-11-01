@@ -4,7 +4,7 @@ Object.defineProperty(exports, '__esModule', { value: true });
 
 function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
 
-var dmp = _interopDefault(require('diff-match-patch'));
+var dmp = _interopDefault(require('diff-match-patch-fork'));
 var chalk = _interopDefault(require('chalk'));
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) {

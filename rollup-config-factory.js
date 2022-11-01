@@ -46,7 +46,7 @@ export function createBrowserUmdBuildConfig(dirName = 'dist') {
 export function createSlimBrowserUmdBuildConfig(dirName = 'dist') {
   const external = [
     'chalk',
-    'diff-match-patch',
+    'diff-match-patch-fork',
   ];
   return {
     input: 'src/main.js',
@@ -108,7 +108,7 @@ export function createModuleBuild(dirName = 'dist', includeCoverage = false) {
     input: 'src/main.js',
     external: [
       // external node modules
-      'diff-match-patch',
+      'diff-match-patch-fork',
       'chalk',
     ],
     plugins,
@@ -154,7 +154,7 @@ export function createTestBuild(dirName = 'dist', includeCoverage = false) {
     external: [
       // external node modules
       'chalk',
-      'diff-match-patch',
+      'diff-match-patch-fork',
     ],
     plugins,
     output: {
@@ -201,7 +201,7 @@ export const createBrowserTestBuild = (
     external: [
       // external node modules
       'chalk',
-      // 'diff-match-patch'
+      // 'diff-match-patch-fork'
     ],
     plugins,
     output: {

@@ -1,4 +1,4 @@
-import dmp from 'diff-match-patch';
+import dmp from 'diff-match-patch-fork';
 import chalk from 'chalk';
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) {

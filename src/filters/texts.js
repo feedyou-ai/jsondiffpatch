@@ -1,5 +1,5 @@
 /* global diff_match_patch */
-import dmp from 'diff-match-patch';
+import dmp from 'diff-match-patch-fork';
 
 let TEXT_DIFF = 2;
 let DEFAULT_MIN_LENGTH = 60;
