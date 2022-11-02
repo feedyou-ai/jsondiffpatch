@@ -1,7 +1,7 @@
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('./empty'), require('./empty')) :
 	typeof define === 'function' && define.amd ? define(['exports', './empty', './empty'], factory) :
-	(factory((global.jsondiffpatch = {}),global['diff-match-patch-fork'],global.chalk));
+	(factory((global['jsondiffpatch-fork'] = {}),global['diff-match-patch-fork'],global.chalk));
 }(this, (function (exports,dmp,chalk) { 'use strict';
 
 dmp = dmp && dmp.hasOwnProperty('default') ? dmp['default'] : dmp;

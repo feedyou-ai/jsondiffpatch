@@ -1,7 +1,7 @@
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('./empty')) :
 	typeof define === 'function' && define.amd ? define(['exports', './empty'], factory) :
-	(factory((global.jsondiffpatch = {}),global.chalk));
+	(factory((global['jsondiffpatch-fork'] = {}),global.chalk));
 }(this, (function (exports,chalk) { 'use strict';
 
 chalk = chalk && chalk.hasOwnProperty('default') ? chalk['default'] : chalk;
